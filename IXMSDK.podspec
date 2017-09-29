@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IXMSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of IXMSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -21,22 +21,28 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/郭江震/IXMSDK'
+  s.homepage         = 'https://github.com/guojiangzhen74/IXMSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '郭江震' => '386912464@qq.com' }
-  s.source           = { :git => 'https://github.com/郭江震/IXMSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/guojiangzhen74/IXMSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'IXMSDK/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'IXMSDK' => ['IXMSDK/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'IXMSDK' => ['IXMSDK/Assets/*.png']
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.public_header_files = 'Pod/Classes/*.h'
+   s.ios.vendored_frameworks = 'Pod/Classes/**/*.framework'
+   s.frameworks = 'UIKit', 'Foundation'
+   s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'FDFullscreenPopGesture', '~> 1.1'
+   s.dependency 'Masonry'
+   s.dependency 'MJExtension'
+   s.dependency 'SVProgressHUD'
+   #s.prefix_header_contents = '#import "IXM.h"','#import "IXMConfig.h"'
 end

@@ -1,9 +1,9 @@
 {
   "name": "IXMSDK",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "summary": "A short description of IXMSDK.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/郭江震/IXMSDK",
+  "homepage": "https://github.com/guojiangzhen74/IXMSDK",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,41 @@
     "郭江震": "386912464@qq.com"
   },
   "source": {
-    "git": "https://github.com/郭江震/IXMSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/guojiangzhen74/IXMSDK.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "IXMSDK/Classes/**/*"
+  "source_files": "IXMSDK/Classes/**/*",
+  "resource_bundles": {
+    "IXMSDK": [
+      "IXMSDK/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/*.h",
+  "ios": {
+    "vendored_frameworks": "Pod/Classes/**/*.framework"
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ],
+    "FDFullscreenPopGesture": [
+      "~> 1.1"
+    ],
+    "Masonry": [
+
+    ],
+    "MJExtension": [
+
+    ],
+    "SVProgressHUD": [
+
+    ]
+  }
 }

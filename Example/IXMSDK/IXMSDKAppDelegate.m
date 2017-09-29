@@ -7,12 +7,18 @@
 //
 
 #import "IXMSDKAppDelegate.h"
-
+#import "SVProgressHUD.h"
+#import "ViewController.h"
+#import "IXMConfig.h"
 @implementation IXMSDKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+#pragma mark I厦门SDK
+    [[IXMConfig globalConfig] setIXMSDKAUTHKEY:@"GrFmeaBQap5ESETu"];
+    [[IXMConfig globalConfig] setIXMSDKXMGOV_API_SourceID:@"2"];
+    [[IXMConfig globalConfig] setIXMSDKnavBackgroundColor:[UIColor customSelectColor]];
     return YES;
 }
 

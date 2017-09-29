@@ -3,9 +3,14 @@ use_frameworks!
 target 'IXMSDK_Example' do
   pod 'IXMSDK', :path => '../'
 
+  pod "AFNetworking", "~> 2.0"
+  pod 'Masonry'
+  pod 'MJExtension'
+  pod 'SVProgressHUD'
+  pod 'FDFullscreenPopGesture', '1.1'
+  pod 'PodAsset'
+
   target 'IXMSDK_Tests' do
     inherit! :search_paths
-
-    
   end
 end
