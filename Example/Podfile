@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IXMSDK_Example' do
+  pod 'IXMSDK', :path => '../'
+
+  target 'IXMSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

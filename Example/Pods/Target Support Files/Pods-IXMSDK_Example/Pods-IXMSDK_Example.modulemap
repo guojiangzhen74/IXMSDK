@@ -1,0 +1,6 @@
+framework module Pods_IXMSDK_Example {
+  umbrella header "Pods-IXMSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

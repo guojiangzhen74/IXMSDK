@@ -1,0 +1,22 @@
+{
+  "name": "IXMSDK",
+  "version": "0.1.0",
+  "summary": "A short description of IXMSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/郭江震/IXMSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "郭江震": "386912464@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/郭江震/IXMSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IXMSDK/Classes/**/*"
+}
